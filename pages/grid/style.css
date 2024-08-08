@@ -1,0 +1,96 @@
+/* Contêiner de Grade (Grid Container) O contêiner de grade é o elemento que possui a propriedade display: grid ou display: inline-grid. Este contêiner abriga os itens de grade.
+
+.container {
+  display: grid;
+}
+
+Definindo Colunas e Linhas As propriedades grid-template-columns e grid-template-rows definem o número e o tamanho das colunas e linhas da grade.
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  Duas colunas: 100px e 200px
+  grid-template-rows: 150px 150px;
+  Duas linhas: ambas 150px
+}
+
+Ajustando o Espaçamento A propriedade gap (ou grid-gap) define o espaçamento entre colunas e linhas.
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 150px 150px;
+  gap: 10px;
+  Espaçamento de 10px entre colunas e linhas
+}
+
+Colocando Itens na Grade Os itens da grade podem ser posicionados usando as propriedades grid-column e grid-row.
+
+.item {
+  grid-column: 1 / 3;
+  Ocupa da coluna 1 à coluna 3 (duas colunas)
+  grid-row: 1 / 2;
+  Ocupa da linha 1 à linha 2 (uma linha)
+}
+
+Alinhamento no Contêiner de Grade As propriedades justify-items,
+align-items,
+justify-content e align-content controlam o alinhamento dos itens dentro do contêiner de grade.
+
+.container {
+  display: grid;
+  justify-items: start;
+  Alinha os itens no início do eixo horizontal
+  align-items: start;
+  Alinha os itens no início do eixo vertical
+  justify-content: start;
+  Alinha a grade no início do contêiner no eixo horizontal
+  align-content: start;
+  Alinha a grade no início do contêiner no eixo vertical
+}
+
+Alinhamento de Itens Individuais Os itens individuais da grade podem ser alinhados usando as propriedades justify-self e align-self.
+
+.item {
+  justify-self: start;
+  Alinha o item no início do eixo horizontal
+  align-self: start;
+  Alinha o item no início do eixo vertical
+}
+ */
+
+/* Área de Grade (Grid Area) É possível nomear áreas da grade e posicionar itens nelas usando a propriedade grid-area. */
+.container {
+  display: grid;
+  /* grid-template-columns: 100px 200px;
+  grid-template-rows: 150px 150px 50px; */
+  gap: 10px;
+
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+}
+
+.header2 {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+  height: 400px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 400px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+.border {
+  border: 1px solid black;
+}

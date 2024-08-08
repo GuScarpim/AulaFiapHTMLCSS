@@ -1,0 +1,127 @@
+img {
+      width: 900px;
+      object-fit: contain;
+    }
+
+    .paragraph {
+      padding: 20px;
+    }
+
+    /* Exercice 1 */
+
+    .containerGrid {
+      grid-gap: 10px; /* Espaçamento */
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .gridItem {
+      background-color: lightblue;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Exercice 2 */
+
+    .containerGridColumn {
+      border: 1px solid #000;
+    }
+
+    .gridItemColumn {
+      background-color: lightgreen;
+      text-align: center;
+    }
+
+    /* Exercice 3 */
+
+    .containerGridSpan {
+      border: 1px solid #000;
+    }
+
+    .gridItemSpan {
+      background-color: lightcoral;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .spanTwo {
+      grid-column: span 2; /* propriedade especifica o tamanho e a localização de um item de grade em um layout de grade */
+    }
+
+    /* Exercice 4 */
+
+    .containerGridAlign {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .gridItemAlign {
+      background-color: lightpink;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .alignCenter {
+      align-self: center;
+    }
+
+    /* Exercice 5 */
+
+    .containerGridArea {
+      grid-template-areas: ''; /* dica: utilize essa prop para organizar os seus grids */
+      border: 1px solid #000;
+    }
+
+    .headerGrid {
+      grid-area: ''; /* dica: utilize o nome da prop para identificar o grid */
+      background-color: lightseagreen;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .sidebarGrid {
+      grid-area: ''; /* dica: utilize o nome da prop para identificar o grid */
+      background-color: lightblue;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .contentGrid {
+      grid-area: ''; /* dica: utilize o nome da prop para identificar o grid */
+      background-color: lightgreen;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .footerGrid {
+      grid-area: ''; /* dica: utilize o nome da prop para identificar o grid */
+      background-color: lightsalmon;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Exercice 6 */
+
+    .containerGridAutoFit {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .gridItemAutoFit {
+      background-color: lightyellow;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Exercice 7 */
+
+    .containerGridFixed {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    .gridItemFixed {
+      background-color: lightcyan;
+      text-align: center;
+      padding: 20px;
+    }

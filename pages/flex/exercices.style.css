@@ -1,0 +1,89 @@
+
+    img {
+      width: 900px;
+      object-fit: contain;
+    }
+
+    .paragraph {
+      padding: 20px;
+    }
+
+    /* Exercice 1 */
+
+    .containerCenter {
+      border: 1px solid #000;
+    }
+
+    /* Exercice 2 */
+
+    .containerBox {
+      padding: 10px;
+    }
+
+    .box {
+      background-color: lightblue;
+      text-align: center;  /* Centraliza o texto */
+      line-height: 50px; /* Espaçamento entre linhas */
+    }
+
+    /* Exercice 3 */
+
+    .containerBoxColumn {
+      padding: 10px;
+    }
+
+    .boxColumn {
+      background-color: lightgreen;
+      text-align: center;  /* Centraliza o texto */
+      line-height: 50px; /* Espaçamento entre linhas */
+    }
+
+    /* Exercice 4 */
+    .containerAlignEnd {
+      border: 1px solid #000;
+    }
+
+    .boxEnd {
+      background-color: lightcoral;
+      text-align: center;  /* Centraliza o texto */
+      line-height: 50px; /* Espaçamento entre linhas */
+    }
+
+    /* Exercice 5 */
+    .containerSpaceAround {
+      border: 1px solid #000;
+    }
+
+    .boxAround {
+      background-color: lightpink;
+      text-align: center;  /* Centraliza o texto */
+      line-height: 50px; /* Espaçamento entre linhas */
+    }
+
+    /* Exercice 6 */
+    .containerStretch {
+      align-items: stretch; /* Centraliza a cima da caixa e estica todo o conteúdo para baixo sem mexer no texto */
+      border: 1px solid #000;
+    }
+
+    .boxStretch {
+      background-color: lightseagreen;
+      text-align: center; /* Centraliza o texto */
+    }
+
+    /* Exercice 7 */
+    .containerOrder {
+      border: 1px solid #000;
+    }
+
+    .boxOrder {
+      background-color: lightsalmon;
+      text-align: center; /* Centraliza o texto */
+      line-height: 50px; /* Espaçamento entre linhas */
+    }
+
+    /* nth-child serve para estilizar apenas o 2 filho que tiver a classe boxOrder */
+    .boxOrder:nth-child(2) {
+      /* Altera a ordem de visualização */
+      order: 1;
+    }
